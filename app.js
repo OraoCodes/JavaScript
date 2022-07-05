@@ -44,5 +44,21 @@ function ageMarginCalculator(currentAge){
 ageMargin = ageMarginCalculator(myAge);
 alert(ageMargin);
 
-//Exercise
+// Exercise
+let courseTitle = 'How to get away with murder';
+let coursePrice = 5000;
+let courseGoals = ['Be Kenya`s #1', 'Code new language', 'Better coder'];
 
+let course = {
+    title: courseTitle,
+    price: coursePrice,
+    goals: courseGoals
+}
+
+function accesslistItem(array, arrayIndex){
+    let arrayElement = array[arrayIndex];
+    return arrayElement;
+}
+
+let firstGoal = accesslistItem(course.goals, 0)
+alert(firstGoal);
