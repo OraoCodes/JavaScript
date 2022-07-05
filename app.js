@@ -8,17 +8,17 @@ let job = {
 };
 let adultYears;
 //Demo on how to strore the variable and the result together
-function calculateAdultYears(){
-    adultYears = age - 18;
+function calculateAdultYears() {
+  adultYears = age - 18;
 }
 calculateAdultYears();
-alert(adultYears);
+console.log(adultYears);
 //demo on how to use the return function - helps reduce access of the variable on a global and
-function totalAdultYears(){
-    return age - 28;
+function totalAdultYears() {
+  return age - 28;
 }
 adultYears = totalAdultYears();
-alert(adultYears);
+console.log(adultYears);
 
 // Lets refactor this code to remove the global inside the functions
 
@@ -30,45 +30,46 @@ function adultDeterminant(currentAge) {
   return currentAge - 18;
 }
 adultMargin = adultDeterminant(years);
-alert(adultMargin);
+console.log(adultMargin);
 //Another way to write this code - propbaby to refactor and maintain a good structure
 let myAge = 24;
 let ageMargin;
 
-function ageMarginCalculator(currentAge){
-    let result;
-    result = currentAge - 18;
-    return result;
+function ageMarginCalculator(currentAge) {
+  let result;
+  result = currentAge - 18;
+  return result;
 }
 
 ageMargin = ageMarginCalculator(myAge);
-alert(ageMargin);
+console.log(ageMargin);
 
 // Exercise
-let courseTitle = 'How to get away with murder';
+let courseTitle = "How to get away with murder";
 let coursePrice = 5000;
-let courseGoals = ['Be Kenya`s #1', 'Code new language', 'Better coder'];
+let courseGoals = ["Be Kenya`s #1", "Code new language", "Better coder"];
 
 let course = {
-    title: courseTitle,
-    price: coursePrice,
-    goals: courseGoals
+  title: courseTitle,
+  price: coursePrice,
+  goals: courseGoals,
+};
+
+function accesslistItem(array, arrayIndex) {
+  let arrayElement = array[arrayIndex];
+  return arrayElement;
 }
 
-function accesslistItem(array, arrayIndex){
-    let arrayElement = array[arrayIndex];
-    return arrayElement;
-}
-
-let firstGoal = accesslistItem(course.goals, 0)
-alert(firstGoal);
+let firstGoal = accesslistItem(course.goals, 0);
+console.log(firstGoal);
 
 //Introduction to methods
 let person = {
-    personName: 'Max',//property
-    greet(){//method
-        alert('Hello');
-    }
+  personName: "Max", //property
+  greet() {
+    //method
+    console.log("Hello");
+  },
 };
 
 person.greet();
