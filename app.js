@@ -62,3 +62,13 @@ function accesslistItem(array, arrayIndex){
 
 let firstGoal = accesslistItem(course.goals, 0)
 alert(firstGoal);
+
+//Introduction to methods
+let person = {
+    personName: 'Max',//property
+    greet(){//method
+        alert('Hello');
+    }
+};
+
+person.greet();
