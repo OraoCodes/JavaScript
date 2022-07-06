@@ -73,3 +73,10 @@ let person = {
 };
 
 person.greet();
+
+let company = 'WorkforceAfric';
+console.log(company.length);
+//legnth can be used in both the string and arrays for both checking of length
+
+let favoriteFood = ['Fidsh', 'Omlette', 'Eggs'];
+console.log(favoriteFood.length)
