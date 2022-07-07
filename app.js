@@ -27,6 +27,12 @@ firstParagraph.append(newAnchorElement);
 let firstH1Element = document.querySelector('h1');
 
 //new browser versions 
-firstH1Element.remove();
+// firstH1Element.remove();
 //for older browsers Versions such as Internet Exploerer.
  firstH1Element.parentElement.removeChild(firstH1Element);
+
+ //MOVING ELEMENTS
+ firstParagraph.parentElement.append(firstParagraph);
+
+ //INNER HTML
+firstParagraph.innerHTML = 'Hi this is <strong>important</strong>'
