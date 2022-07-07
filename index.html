@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Javascript Practise</title>
     <script src="app.js" defer></script>
 </head>
+
 <body>
-    <h1>Hi there</h1>
-    <p>I am new</p>
-    <p>
-        This a 
-        <a href="#" id="external-link">Link</a>
-    </p>
-    <h2>
-        Click Me
-    </h2>
-    <input type="text">
+    <form action="">
+        <div class="control">
+            <label for="product-name">Product Name</label><br>
+            <input type="text" id="product-name" name="product-name" maxlength="30">
+            <span id="charcount">
+                <span id="remaining-chars">30</span>/30
+            </span>
+        </div>
+        <button>Submit</button>
+    </form>
 </body>
+
 </html>
