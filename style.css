@@ -1,0 +1,54 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    /* background-color: rgb(36, 35, 30); */
+}
+form{
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 50rem;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); */
+    border-radius: 6px;
+    padding: 1 rem;
+    background-color: rgb(230, 225, 218);
+}
+.control{
+    margin-bottom: 1rem;
+}
+
+label{
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+input{
+    font: inherit;
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: 1px solid #b3c4cf;
+    color: rgb(53, 37, 17);
+    width: 25rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+input:focus{
+    background-color: #e1ecf3;
+}
+button{
+    font: inherit;
+    background-color: #1c9bf0;
+    border: 1px solid #b3c4cf;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: antiquewhite;
+}
+
+#charcount{
+    color: #1c9bf0;
+}
+input.warning{
+    background-color: rgb(102, 66, 66);
+}
+#remaining-chars.warning{
+    color: rgb(131, 66, 66);
+}
