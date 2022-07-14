@@ -26,7 +26,7 @@
 // // //DELETE
 // // let firstH1Element = document.querySelector('h1');
 
-// // //new browser versions 
+// // //new browser versions
 // // // firstH1Element.remove();
 // // //for older browsers Versions such as Internet Exploerer.
 // //  firstH1Element.parentElement.removeChild(firstH1Element);
@@ -69,21 +69,30 @@
 //------------------------------------------------------------------------
 //                        DEMO
 //------------------------------------------------------------------------
-let inputField = document.getElementById("product-name");
-let remainingCharsElement = document.getElementById("remaining-chars");
+const inputField = document.getElementById("product-name");
+const remainingCharsElement = document.getElementById("remaining-chars");
 
 let maxAllowedCharacters = inputField.maxLength; //getting atribute
 // console.dir(inputField) --- use this to check our available properties;
 
 function updateRemainingCharacters(event) {
-  let inputProductName = event.target.value;
-  let enteredTextLength = inputProductName.length;
+  const inputProductName = event.target.value;
+  const enteredTextLength = inputProductName.length;
 
   // let remainigCharacters = 60 - enteredTextLength;
   // to avoid hard coding the hard codding above you can get the property by comsole.dir(inputFiled)
-  let remainingChar = maxAllowedCharacters - enteredTextLength;
+  const remainingChar = maxAllowedCharacters - enteredTextLength;
 
   remainingCharsElement.textContent = remainingChar;
+  if(remainingChar <= 4){
+    remainingCharsElement.classList.add('warning');
+  }
+
 }
 
 inputField.addEventListener("input", updateRemainingCharacters);
+
+// Control structures
+// if (){
+  
+// }
