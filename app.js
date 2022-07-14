@@ -138,17 +138,27 @@
 // Project Loops
 // Sum numbers
 
-const calculatorBtn = document.getElementById('calculator');
+// const calculatorBtn = document.getElementById('calculator');
 
-function calculate(){
-  const userInput = document.getElementById('entered-number');
-  const enteredNumber = userInput.value;
+// function calculate(){
+//   const userInput = document.getElementById('entered-number');
+//   const enteredNumber = userInput.value;
 
-  let total = 0;
-  for(let i = 0; i <= enteredNumber; i++){
-    total = total + i;
+//   let total = 0;
+//   for(let i = 0; i <= enteredNumber; i++){
+//     total = total + i;
+//   }
+//   const totalDisplay = document.getElementById('total');
+//   totalDisplay.textContent = total;
+// }
+// calculatorBtn.addEventListener('click', calculate);
+
+/// for of loops
+const higlightBtn = document.getElementById('highlight');
+function highlighting() {
+  const anchorElements = document.querySelectorAll('#for-of a');
+  for (const anchorElement of anchorElements) {
+    anchorElement.classList.add('highlighter');
   }
-  const totalDisplay = document.getElementById('total');
-  totalDisplay.textContent = total;
 }
-calculatorBtn.addEventListener('click', calculate);
+higlightBtn.addEventListener('click', highlighting);
