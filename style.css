@@ -58,3 +58,17 @@ input.error{
 #remaining-chars.error{
     color: rgb(182, 7, 7);
 }
+#for-of{
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 50rem;
+}
+#for-of a {
+    text-decoration: none;
+    font-weight: 700;
+    margin:2rem;
+}
+.highlighter{
+    color: black;
+    background-color: yellow;
+}
