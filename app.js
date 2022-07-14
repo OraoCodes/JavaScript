@@ -84,8 +84,16 @@ function updateRemainingCharacters(event) {
   const remainingChar = maxAllowedCharacters - enteredTextLength;
 
   remainingCharsElement.textContent = remainingChar;
-  if(remainingChar <= 4){
+  if(remainingChar === 0){
+    remainingCharsElement.classList.add('error');
+    inputField.classList.add('error');
+  } else if(remainingChar <= 10){
     remainingCharsElement.classList.add('warning');
+    inputField.classList.add('warning');
+  }
+  else{
+    remainingCharsElement.classList.remove('error', 'warning');
+    inputField.classList.remove('error', 'warning');
   }
 
 }
@@ -93,6 +101,6 @@ function updateRemainingCharacters(event) {
 inputField.addEventListener("input", updateRemainingCharacters);
 
 // Control structures
-// if (){
+// if (){  
   
-// }
+// 
