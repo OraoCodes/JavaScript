@@ -47,8 +47,14 @@ button:hover{
     color: #1c9bf0;
 }
 input.warning{
-    background-color: rgb(102, 66, 66);
+    background-color: rgb(209, 133, 133);
 }
 #remaining-chars.warning{
-    color: rgb(131, 66, 66);
+    color: rgb(204, 89, 89);
+}
+input.error{
+    background-color: rgb(219, 16, 16);
+}
+#remaining-chars.error{
+    color: rgb(182, 7, 7);
 }
