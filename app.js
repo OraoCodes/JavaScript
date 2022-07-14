@@ -102,35 +102,53 @@
 // }
 // LOOPS 
 // 1. For loop
-for (let i = 0; i < 10; i++){
-  console.log(i);
+// for (let i = 0; i < 10; i++){
+//   console.log(i);
+// }
+
+// //for of - loop through arrays
+
+// const users = ['Max', 'Orao','Michelle', 'Family'];
+
+// for(const user of users){
+//   console.log(user);
+// }
+
+// // for in - used in opjects
+// const loggedInUser = {
+//   name : 'Orao',
+//   age : 32,
+//   isAdmin: true
+// };
+
+// for (const propertyName in loggedInUser){
+// console.log(propertyName);
+// console.log(loggedInUser[propertyName]);//loggedInUser
+// }
+
+
+// //3, while loop
+// let finished = false;
+
+// while (!finished) {
+//   finished = confirm('Do you want to quit ?');
+// }
+// console.log('Done');
+
+// Project Loops
+// Sum numbers
+
+const calculatorBtn = document.getElementById('calculator');
+
+function calculate(){
+  const userInput = document.getElementById('entered-number');
+  const enteredNumber = userInput.value;
+
+  let total = 0;
+  for(let i = 0; i <= enteredNumber; i++){
+    total = total + i;
+  }
+  const totalDisplay = document.getElementById('total');
+  totalDisplay.textContent = total;
 }
-
-//for of - loop through arrays
-
-const users = ['Max', 'Orao','Michelle', 'Family'];
-
-for(const user of users){
-  console.log(user);
-}
-
-// for in - used in opjects
-const loggedInUser = {
-  name : 'Orao',
-  age : 32,
-  isAdmin: true
-};
-
-for (const propertyName in loggedInUser){
-console.log(propertyName);
-console.log(loggedInUser[propertyName]);//loggedInUser
-}
-
-
-//3, while loop
-let finished = false;
-
-while (!finished) {
-  finished = confirm('Do you want to quit ?');
-}
-console.log('Done')
+calculatorBtn.addEventListener('click', calculate);
